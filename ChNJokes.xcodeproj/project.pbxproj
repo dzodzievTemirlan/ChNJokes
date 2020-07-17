@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA324C198E500BEAF8B /* AppDelegate.swift */; };
 		79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA524C198E500BEAF8B /* SceneDelegate.swift */; };
-		79354DA824C198E500BEAF8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA724C198E500BEAF8B /* ViewController.swift */; };
+		79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA724C198E500BEAF8B /* MainViewController.swift */; };
 		79354DAB24C198E500BEAF8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79354DA924C198E500BEAF8B /* Main.storyboard */; };
 		79354DAE24C198E500BEAF8B /* ChNJokes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79354DAC24C198E500BEAF8B /* ChNJokes.xcdatamodeld */; };
 		79354DB024C198E700BEAF8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79354DAF24C198E700BEAF8B /* Assets.xcassets */; };
 		79354DB324C198E700BEAF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79354DB124C198E700BEAF8B /* LaunchScreen.storyboard */; };
+		79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DBA24C19D0A00BEAF8B /* Builder.swift */; };
+		79354DBD24C19D1900BEAF8B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DBC24C19D1900BEAF8B /* MainPresenter.swift */; };
+		79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79354DC324C1AA1900BEAF8B /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79354DA024C198E500BEAF8B /* ChNJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChNJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79354DA324C198E500BEAF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79354DA524C198E500BEAF8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79354DA724C198E500BEAF8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79354DA724C198E500BEAF8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79354DAA24C198E500BEAF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79354DAD24C198E500BEAF8B /* ChNJokes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChNJokes.xcdatamodel; sourceTree = "<group>"; };
 		79354DAF24C198E700BEAF8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79354DB224C198E700BEAF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79354DB424C198E700BEAF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79354DBA24C19D0A00BEAF8B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		79354DBC24C19D1900BEAF8B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		79354DC324C1AA1900BEAF8B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,8 @@
 			children = (
 				79354DA324C198E500BEAF8B /* AppDelegate.swift */,
 				79354DA524C198E500BEAF8B /* SceneDelegate.swift */,
-				79354DA724C198E500BEAF8B /* ViewController.swift */,
+				79354DBA24C19D0A00BEAF8B /* Builder.swift */,
+				79354DBE24C19D2700BEAF8B /* MainModule */,
 				79354DA924C198E500BEAF8B /* Main.storyboard */,
 				79354DAF24C198E700BEAF8B /* Assets.xcassets */,
 				79354DB124C198E700BEAF8B /* LaunchScreen.storyboard */,
@@ -68,6 +75,32 @@
 				79354DAC24C198E500BEAF8B /* ChNJokes.xcdatamodeld */,
 			);
 			path = ChNJokes;
+			sourceTree = "<group>";
+		};
+		79354DBE24C19D2700BEAF8B /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				79354DC024C19D3D00BEAF8B /* View */,
+				79354DBF24C19D3100BEAF8B /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		79354DBF24C19D3100BEAF8B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79354DBC24C19D1900BEAF8B /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		79354DC024C19D3D00BEAF8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79354DA724C198E500BEAF8B /* MainViewController.swift */,
+				79354DC324C1AA1900BEAF8B /* MainViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +113,7 @@
 				79354D9C24C198E500BEAF8B /* Sources */,
 				79354D9D24C198E500BEAF8B /* Frameworks */,
 				79354D9E24C198E500BEAF8B /* Resources */,
+				79354DC524C1AB2400BEAF8B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,20 +165,43 @@
 				79354DB324C198E700BEAF8B /* LaunchScreen.storyboard in Resources */,
 				79354DB024C198E700BEAF8B /* Assets.xcassets in Resources */,
 				79354DAB24C198E500BEAF8B /* Main.storyboard in Resources */,
+				79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79354DC524C1AB2400BEAF8B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79354D9C24C198E500BEAF8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79354DA824C198E500BEAF8B /* ViewController.swift in Sources */,
+				79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */,
+				79354DBD24C19D1900BEAF8B /* MainPresenter.swift in Sources */,
 				79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */,
 				79354DAE24C198E500BEAF8B /* ChNJokes.xcdatamodeld in Sources */,
 				79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */,
+				79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
