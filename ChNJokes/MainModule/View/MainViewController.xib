@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ChNJokes" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="5vU-hc-f77" id="jhL-b4-fdm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Znm-zI-cHr"/>
             </connections>
         </placeholder>
@@ -16,9 +17,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.078431372550000003" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5vU-hc-f77">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5vU-hc-f77" secondAttribute="trailing" id="6Qm-Fz-uVQ"/>
+                <constraint firstItem="5vU-hc-f77" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DSz-Se-8dP"/>
+                <constraint firstAttribute="bottom" secondItem="5vU-hc-f77" secondAttribute="bottom" id="SYy-LB-Svf"/>
+                <constraint firstItem="5vU-hc-f77" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sgb-FN-FOY"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </view>
     </objects>
 </document>

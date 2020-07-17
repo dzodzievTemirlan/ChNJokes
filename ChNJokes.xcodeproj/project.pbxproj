@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44A1B02B52647E1FB085E279 /* Pods_ChNJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */; };
 		79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA324C198E500BEAF8B /* AppDelegate.swift */; };
 		79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA524C198E500BEAF8B /* SceneDelegate.swift */; };
 		79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA724C198E500BEAF8B /* MainViewController.swift */; };
@@ -17,9 +18,16 @@
 		79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DBA24C19D0A00BEAF8B /* Builder.swift */; };
 		79354DBD24C19D1900BEAF8B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DBC24C19D1900BEAF8B /* MainPresenter.swift */; };
 		79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79354DC324C1AA1900BEAF8B /* MainViewController.xib */; };
+		79354DC724C1C3AB00BEAF8B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DC624C1C3AB00BEAF8B /* Router.swift */; };
+		79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DCA24C1CA8900BEAF8B /* NetworkService.swift */; };
+		79354DCE24C1CC1C00BEAF8B /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DCD24C1CC1C00BEAF8B /* MainModel.swift */; };
+		79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */; };
+		79354DD524C1DE8600BEAF8B /* MainJokeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */; };
+		79354DD624C1DE8600BEAF8B /* MainJokeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76FAA2C65F9A8ABBC56A0239 /* Pods-ChNJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChNJokes.debug.xcconfig"; path = "Target Support Files/Pods-ChNJokes/Pods-ChNJokes.debug.xcconfig"; sourceTree = "<group>"; };
 		79354DA024C198E500BEAF8B /* ChNJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChNJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79354DA324C198E500BEAF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79354DA524C198E500BEAF8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +40,14 @@
 		79354DBA24C19D0A00BEAF8B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		79354DBC24C19D1900BEAF8B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		79354DC324C1AA1900BEAF8B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		79354DC624C1C3AB00BEAF8B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		79354DCA24C1CA8900BEAF8B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		79354DCD24C1CC1C00BEAF8B /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtMainViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJokeViewCell.swift; sourceTree = "<group>"; };
+		79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainJokeViewCell.xib; sourceTree = "<group>"; };
+		9AF7435550CCC423A6D4101C /* Pods-ChNJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChNJokes.release.xcconfig"; path = "Target Support Files/Pods-ChNJokes/Pods-ChNJokes.release.xcconfig"; sourceTree = "<group>"; };
+		EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChNJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A1B02B52647E1FB085E279 /* Pods_ChNJokes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B40C70FA477C2FC132EF337 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76FAA2C65F9A8ABBC56A0239 /* Pods-ChNJokes.debug.xcconfig */,
+				9AF7435550CCC423A6D4101C /* Pods-ChNJokes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		40EDDF2B6F61A7897BCAF6AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79354D9724C198E500BEAF8B = {
 			isa = PBXGroup;
 			children = (
 				79354DA224C198E500BEAF8B /* ChNJokes */,
 				79354DA124C198E500BEAF8B /* Products */,
+				0B40C70FA477C2FC132EF337 /* Pods */,
+				40EDDF2B6F61A7897BCAF6AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +102,10 @@
 			children = (
 				79354DA324C198E500BEAF8B /* AppDelegate.swift */,
 				79354DA524C198E500BEAF8B /* SceneDelegate.swift */,
-				79354DBA24C19D0A00BEAF8B /* Builder.swift */,
+				79354DC824C1CA2E00BEAF8B /* Builder */,
+				79354DC924C1CA3500BEAF8B /* Router */,
 				79354DBE24C19D2700BEAF8B /* MainModule */,
+				79354DCC24C1CA8F00BEAF8B /* ServiceLayer */,
 				79354DA924C198E500BEAF8B /* Main.storyboard */,
 				79354DAF24C198E700BEAF8B /* Assets.xcassets */,
 				79354DB124C198E700BEAF8B /* LaunchScreen.storyboard */,
@@ -80,8 +118,10 @@
 		79354DBE24C19D2700BEAF8B /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				79354DCF24C1CC2000BEAF8B /* Model */,
 				79354DC024C19D3D00BEAF8B /* View */,
 				79354DBF24C19D3100BEAF8B /* Presenter */,
+				79354DD224C1D60900BEAF8B /* Extentesion */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -99,8 +139,58 @@
 			children = (
 				79354DA724C198E500BEAF8B /* MainViewController.swift */,
 				79354DC324C1AA1900BEAF8B /* MainViewController.xib */,
+				79354DD724C1DE8F00BEAF8B /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		79354DC824C1CA2E00BEAF8B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				79354DBA24C19D0A00BEAF8B /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		79354DC924C1CA3500BEAF8B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				79354DC624C1C3AB00BEAF8B /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		79354DCC24C1CA8F00BEAF8B /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				79354DCA24C1CA8900BEAF8B /* NetworkService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		79354DCF24C1CC2000BEAF8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79354DCD24C1CC1C00BEAF8B /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79354DD224C1D60900BEAF8B /* Extentesion */ = {
+			isa = PBXGroup;
+			children = (
+				79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */,
+			);
+			path = Extentesion;
+			sourceTree = "<group>";
+		};
+		79354DD724C1DE8F00BEAF8B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */,
+				79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,10 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79354DB724C198E700BEAF8B /* Build configuration list for PBXNativeTarget "ChNJokes" */;
 			buildPhases = (
+				C390E9166B29202C72862D24 /* [CP] Check Pods Manifest.lock */,
 				79354D9C24C198E500BEAF8B /* Sources */,
 				79354D9D24C198E500BEAF8B /* Frameworks */,
 				79354D9E24C198E500BEAF8B /* Resources */,
 				79354DC524C1AB2400BEAF8B /* ShellScript */,
+				759B35B447369042F9514DE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79354DB324C198E700BEAF8B /* LaunchScreen.storyboard in Resources */,
+				79354DD624C1DE8600BEAF8B /* MainJokeViewCell.xib in Resources */,
 				79354DB024C198E700BEAF8B /* Assets.xcassets in Resources */,
 				79354DAB24C198E500BEAF8B /* Main.storyboard in Resources */,
 				79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */,
@@ -172,6 +265,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		759B35B447369042F9514DE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChNJokes/Pods-ChNJokes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChNJokes/Pods-ChNJokes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChNJokes/Pods-ChNJokes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79354DC524C1AB2400BEAF8B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +299,28 @@
 			shellPath = /bin/sh;
 			shellScript = "\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
 		};
+		C390E9166B29202C72862D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChNJokes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,7 +330,12 @@
 			files = (
 				79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */,
 				79354DBD24C19D1900BEAF8B /* MainPresenter.swift in Sources */,
+				79354DD524C1DE8600BEAF8B /* MainJokeViewCell.swift in Sources */,
+				79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */,
+				79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */,
 				79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */,
+				79354DC724C1C3AB00BEAF8B /* Router.swift in Sources */,
+				79354DCE24C1CC1C00BEAF8B /* MainModel.swift in Sources */,
 				79354DAE24C198E500BEAF8B /* ChNJokes.xcdatamodeld in Sources */,
 				79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */,
 				79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */,
@@ -343,6 +480,7 @@
 		};
 		79354DB824C198E700BEAF8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FAA2C65F9A8ABBC56A0239 /* Pods-ChNJokes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -361,6 +499,7 @@
 		};
 		79354DB924C198E700BEAF8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF7435550CCC423A6D4101C /* Pods-ChNJokes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
