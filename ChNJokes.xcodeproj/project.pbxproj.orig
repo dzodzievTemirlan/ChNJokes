@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< .merge_file_47055P
+		44A1B02B52647E1FB085E279 /* Pods_ChNJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */; };
+=======
 		15689B0224C1C342002C0CAC /* MyJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15689B0024C1C342002C0CAC /* MyJokesViewController.swift */; };
 		15689B0324C1C342002C0CAC /* MyJokesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15689B0124C1C342002C0CAC /* MyJokesViewController.xib */; };
 		15689B0724C1C3A1002C0CAC /* MyJokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15689B0524C1C3A1002C0CAC /* MyJokeTableViewCell.swift */; };
@@ -18,7 +21,7 @@
 		15A1C42724C1E97100F6DCF8 /* NewJokeExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1C42624C1E97100F6DCF8 /* NewJokeExtention.swift */; };
 		15D5CDB224C1C8B500A5B032 /* MyJokesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D5CDB124C1C8B500A5B032 /* MyJokesPresenter.swift */; };
 		15D5CDB424C1CC1600A5B032 /* MyJokesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D5CDB324C1CC1600A5B032 /* MyJokesDataSource.swift */; };
-		44A1B02B52647E1FB085E279 /* Pods_ChNJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */; };
+>>>>>>> .merge_file_n6cQZl
 		79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA324C198E500BEAF8B /* AppDelegate.swift */; };
 		79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA524C198E500BEAF8B /* SceneDelegate.swift */; };
 		79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DA724C198E500BEAF8B /* MainViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< .merge_file_47055P
+		76FAA2C65F9A8ABBC56A0239 /* Pods-ChNJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChNJokes.debug.xcconfig"; path = "Target Support Files/Pods-ChNJokes/Pods-ChNJokes.debug.xcconfig"; sourceTree = "<group>"; };
+=======
 		15689B0024C1C342002C0CAC /* MyJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJokesViewController.swift; sourceTree = "<group>"; };
 		15689B0124C1C342002C0CAC /* MyJokesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJokesViewController.xib; sourceTree = "<group>"; };
 		15689B0524C1C3A1002C0CAC /* MyJokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJokeTableViewCell.swift; sourceTree = "<group>"; };
@@ -49,7 +55,7 @@
 		15A1C42624C1E97100F6DCF8 /* NewJokeExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJokeExtention.swift; sourceTree = "<group>"; };
 		15D5CDB124C1C8B500A5B032 /* MyJokesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJokesPresenter.swift; sourceTree = "<group>"; };
 		15D5CDB324C1CC1600A5B032 /* MyJokesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJokesDataSource.swift; sourceTree = "<group>"; };
-		76FAA2C65F9A8ABBC56A0239 /* Pods-ChNJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChNJokes.debug.xcconfig"; path = "Target Support Files/Pods-ChNJokes/Pods-ChNJokes.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> .merge_file_n6cQZl
 		79354DA024C198E500BEAF8B /* ChNJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChNJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79354DA324C198E500BEAF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79354DA524C198E500BEAF8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< .merge_file_47055P
 		0B40C70FA477C2FC132EF337 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +106,7 @@
 				EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
+=======
 		15689AFF24C1C005002C0CAC /* MyJokesModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +201,7 @@
 				15D5CDB124C1C8B500A5B032 /* MyJokesPresenter.swift */,
 			);
 			path = Presenter;
+>>>>>>> .merge_file_n6cQZl
 			sourceTree = "<group>";
 		};
 		79354D9724C198E500BEAF8B = {
@@ -380,9 +387,12 @@
 				79354DB024C198E700BEAF8B /* Assets.xcassets in Resources */,
 				15A1C42124C1DE3000F6DCF8 /* NewJokeViewController.xib in Resources */,
 				79354DAB24C198E500BEAF8B /* Main.storyboard in Resources */,
+<<<<<<< .merge_file_47055P
+				79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */,
+=======
 				15689B0324C1C342002C0CAC /* MyJokesViewController.xib in Resources */,
 				15689B0824C1C3A1002C0CAC /* MyJokeTableViewCell.xib in Resources */,
-				79354DC424C1AA1900BEAF8B /* MainViewController.xib in Resources */,
+>>>>>>> .merge_file_n6cQZl
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +468,15 @@
 				79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */,
 				79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */,
 				79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */,
-				15A1C42424C1E19200F6DCF8 /* NewJokePresenter.swift in Sources */,
-				15689B0724C1C3A1002C0CAC /* MyJokeTableViewCell.swift in Sources */,
+<<<<<<< .merge_file_47055P
 				79354DC724C1C3AB00BEAF8B /* Router.swift in Sources */,
 				79354DCE24C1CC1C00BEAF8B /* MainModel.swift in Sources */,
+				79354DAE24C198E500BEAF8B /* ChNJokes.xcdatamodeld in Sources */,
+				79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */,
+				79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */,
+=======
+				15A1C42424C1E19200F6DCF8 /* NewJokePresenter.swift in Sources */,
+				15689B0724C1C3A1002C0CAC /* MyJokeTableViewCell.swift in Sources */,
 				79354DAE24C198E500BEAF8B /* ChNJokes.xcdatamodeld in Sources */,
 				79354DA624C198E500BEAF8B /* SceneDelegate.swift in Sources */,
 				15689B0224C1C342002C0CAC /* MyJokesViewController.swift in Sources */,
@@ -470,7 +485,7 @@
 				15A1C41A24C1D3C300F6DCF8 /* CoreDataService.swift in Sources */,
 				15A1C42724C1E97100F6DCF8 /* NewJokeExtention.swift in Sources */,
 				15D5CDB424C1CC1600A5B032 /* MyJokesDataSource.swift in Sources */,
-				79354DBB24C19D0A00BEAF8B /* Builder.swift in Sources */,
+>>>>>>> .merge_file_n6cQZl
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
