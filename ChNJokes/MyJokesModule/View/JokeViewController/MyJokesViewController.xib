@@ -19,8 +19,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-GY-SL5">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
@@ -28,32 +28,16 @@
                         <outlet property="delegate" destination="-1" id="SmS-TJ-Eaa"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xv-WF-jE1">
-                    <rect key="frame" x="314" y="782" width="80" height="80"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="80" id="fWb-dr-wbe"/>
-                        <constraint firstAttribute="height" constant="80" id="kk6-Nc-5OO"/>
-                    </constraints>
-                    <state key="normal" image="add"/>
-                    <connections>
-                        <action selector="addAction:" destination="-1" eventType="touchUpInside" id="Yfz-MK-fHe"/>
-                    </connections>
-                </button>
             </subviews>
-            <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Xv-WF-jE1" secondAttribute="trailing" constant="20" id="F68-OV-fsM"/>
-                <constraint firstItem="Nvu-GY-SL5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="L7I-8U-s4O"/>
-                <constraint firstItem="Nvu-GY-SL5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TRH-Lw-aay"/>
-                <constraint firstItem="Nvu-GY-SL5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WBZ-k0-fDl"/>
-                <constraint firstItem="6Xv-WF-jE1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="aXt-Bm-yfe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Nvu-GY-SL5" secondAttribute="bottom" id="sRs-LC-1x2"/>
+                <constraint firstItem="Nvu-GY-SL5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L7I-8U-s4O"/>
+                <constraint firstItem="Nvu-GY-SL5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TRH-Lw-aay"/>
+                <constraint firstItem="Nvu-GY-SL5" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="WBZ-k0-fDl"/>
+                <constraint firstItem="Nvu-GY-SL5" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="yLk-g5-vNr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
         </view>
     </objects>
-    <resources>
-        <image name="add" width="80" height="80"/>
-    </resources>
 </document>

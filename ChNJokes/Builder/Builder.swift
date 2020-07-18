@@ -13,12 +13,18 @@ protocol BuilderProtocol {
 }
 
 class ModuleBuilder: BuilderProtocol {
-   static func createMainModule() -> UIViewController {
+    static func createMainModule() -> UIViewController {
         let view = MainViewController()
-    let networkService = NetworkService()
+        let networkService = NetworkService()
         let presenter = MainPresenter(view: view, networkService: networkService)
         view.presenter = presenter
         return view
     }
-    
+
+    static func createMyJokesScreen() -> UIViewController {
+        let view = MyJokesViewController()
+        let presenter = MyJokesPresenter(view: view)
+        view.presenter = presenter
+        return view
+    }
 }

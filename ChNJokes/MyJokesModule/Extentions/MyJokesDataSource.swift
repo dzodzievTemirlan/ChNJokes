@@ -22,9 +22,9 @@ extension MyJokesViewController: UITableViewDataSource, UITableViewDelegate {
         cell.myJokeTableViewCellDelegate = self
         return cell
     }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView()
-    }
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        return UIView()
+//    }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
            let contextItem = UIContextualAction(style: .destructive, title: "Delete") {[weak self]  (_, _, _) in
             guard let item = self?.presenter.items[indexPath.row] else {return }
@@ -38,12 +38,13 @@ extension MyJokesViewController: UITableViewDataSource, UITableViewDelegate {
 
             return swipeAction
         }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return .init(CGFloat(200))
+    }
 }
 
 extension MyJokesViewController: MyJokeTableViewCellProtocol {
     func shareWith(activity: UIActivityViewController) {
         present(activity, animated: true)
     }
-    
-
 }

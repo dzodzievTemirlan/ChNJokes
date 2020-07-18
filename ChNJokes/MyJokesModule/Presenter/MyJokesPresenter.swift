@@ -15,7 +15,7 @@ class MyJokesPresenter: NewJokePresenterProtocol {
     
     required init(view:MyJokesViewController) {
         self.view = view
-        getJokesFromCoreData()
+//        getJokesFromCoreData()
     }
 
     func getJokesFromCoreData(){

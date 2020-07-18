@@ -93,14 +93,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		40EDDF2B6F61A7897BCAF6AC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		15689AFF24C1C005002C0CAC /* MyJokesModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +172,15 @@
 			path = JokeViewController;
 			sourceTree = "<group>";
 		};
+		15B5B64424C2EE04009E4BFB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				79354DA324C198E500BEAF8B /* AppDelegate.swift */,
+				79354DA524C198E500BEAF8B /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		15D5CDAF24C1C83F00A5B032 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +196,14 @@
 				15D5CDB124C1C8B500A5B032 /* MyJokesPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		40EDDF2B6F61A7897BCAF6AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		79354D9724C198E500BEAF8B = {
@@ -218,14 +227,12 @@
 		79354DA224C198E500BEAF8B /* ChNJokes */ = {
 			isa = PBXGroup;
 			children = (
-				15689AFF24C1C005002C0CAC /* MyJokesModule */,
-				15A1C41C24C1DE0000F6DCF8 /* NewJokeModule */,
-				15A1C41824C1D3AD00F6DCF8 /* CoreDataService */,
-				79354DA324C198E500BEAF8B /* AppDelegate.swift */,
-				79354DA524C198E500BEAF8B /* SceneDelegate.swift */,
+				15B5B64424C2EE04009E4BFB /* Delegates */,
 				79354DC824C1CA2E00BEAF8B /* Builder */,
 				79354DC924C1CA3500BEAF8B /* Router */,
 				79354DBE24C19D2700BEAF8B /* MainModule */,
+				15689AFF24C1C005002C0CAC /* MyJokesModule */,
+				15A1C41C24C1DE0000F6DCF8 /* NewJokeModule */,
 				79354DCC24C1CA8F00BEAF8B /* ServiceLayer */,
 				79354DA924C198E500BEAF8B /* Main.storyboard */,
 				79354DAF24C198E700BEAF8B /* Assets.xcassets */,
@@ -284,6 +291,7 @@
 		79354DCC24C1CA8F00BEAF8B /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				15A1C41824C1D3AD00F6DCF8 /* CoreDataService */,
 				79354DCA24C1CA8900BEAF8B /* NetworkService.swift */,
 			);
 			path = ServiceLayer;

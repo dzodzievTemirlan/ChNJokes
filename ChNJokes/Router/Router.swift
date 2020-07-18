@@ -14,11 +14,12 @@ class RouterTabBar: UITabBarController {
         super.viewDidLoad()
         UINavigationBar.appearance().prefersLargeTitles = true
         let jokeList = generateNavController(vc: ModuleBuilder.createMainModule(), title: "Joke List")
+        let myJokesList = generateNavController(vc: ModuleBuilder.createMyJokesScreen(), title: "My Jokes")
       
-        viewControllers = [jokeList]
+        viewControllers = [jokeList, myJokesList]
         
     }
-    
+
     fileprivate func generateNavController(vc: UIViewController, title: String) -> UINavigationController {
         let navController = UINavigationController(rootViewController: vc)
         vc.navigationItem.title = title
