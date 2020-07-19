@@ -31,7 +31,7 @@ class CoreDataService {
         saveContext()
     }
     
-   private func saveContext () {
+    private func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -66,4 +66,3 @@ class CoreDataService {
         }
     }
 }
-

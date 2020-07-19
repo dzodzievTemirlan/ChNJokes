@@ -35,6 +35,9 @@
 		79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */; };
 		79354DD524C1DE8600BEAF8B /* MainJokeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */; };
 		79354DD624C1DE8600BEAF8B /* MainJokeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */; };
+		794F6E4724C467A600187DF2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F6E4524C467A600187DF2 /* SettingViewController.swift */; };
+		794F6E4824C467A600187DF2 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794F6E4624C467A600187DF2 /* SettingViewController.xib */; };
+		794F6E4C24C469D800187DF2 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F6E4B24C469D800187DF2 /* SettingPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtMainViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJokeViewCell.swift; sourceTree = "<group>"; };
 		79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainJokeViewCell.xib; sourceTree = "<group>"; };
+		794F6E4524C467A600187DF2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		794F6E4624C467A600187DF2 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		794F6E4B24C469D800187DF2 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		9AF7435550CCC423A6D4101C /* Pods-ChNJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChNJokes.release.xcconfig"; path = "Target Support Files/Pods-ChNJokes/Pods-ChNJokes.release.xcconfig"; sourceTree = "<group>"; };
 		EBAD2B7D8C86D9726931138B /* Pods_ChNJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChNJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,9 +102,9 @@
 		15689AFF24C1C005002C0CAC /* MyJokesModule */ = {
 			isa = PBXGroup;
 			children = (
-				15D5CDB024C1C89F00A5B032 /* Presenter */,
 				15D5CDAF24C1C83F00A5B032 /* View */,
-				15A1C41B24C1DA1100F6DCF8 /* Extentions */,
+				15D5CDB024C1C89F00A5B032 /* Presenter */,
+				15A1C41B24C1DA1100F6DCF8 /* Extension */,
 			);
 			path = MyJokesModule;
 			sourceTree = "<group>";
@@ -120,12 +126,12 @@
 			path = CoreDataService;
 			sourceTree = "<group>";
 		};
-		15A1C41B24C1DA1100F6DCF8 /* Extentions */ = {
+		15A1C41B24C1DA1100F6DCF8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				15D5CDB324C1CC1600A5B032 /* MyJokesDataSource.swift */,
 			);
-			path = Extentions;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		15A1C41C24C1DE0000F6DCF8 /* NewJokeModule */ = {
@@ -234,8 +240,9 @@
 				15689AFF24C1C005002C0CAC /* MyJokesModule */,
 				15A1C41C24C1DE0000F6DCF8 /* NewJokeModule */,
 				79354DCC24C1CA8F00BEAF8B /* ServiceLayer */,
-				79354DA924C198E500BEAF8B /* Main.storyboard */,
+				794F6E4924C467AE00187DF2 /* SettingModule */,
 				79354DAF24C198E700BEAF8B /* Assets.xcassets */,
+				79354DA924C198E500BEAF8B /* Main.storyboard */,
 				79354DB124C198E700BEAF8B /* LaunchScreen.storyboard */,
 				79354DB424C198E700BEAF8B /* Info.plist */,
 				79354DAC24C198E500BEAF8B /* ChNJokes.xcdatamodeld */,
@@ -249,7 +256,7 @@
 				79354DCF24C1CC2000BEAF8B /* Model */,
 				79354DC024C19D3D00BEAF8B /* View */,
 				79354DBF24C19D3100BEAF8B /* Presenter */,
-				79354DD224C1D60900BEAF8B /* Extentesion */,
+				79354DD224C1D60900BEAF8B /* Extension */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -292,7 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				15A1C41824C1D3AD00F6DCF8 /* CoreDataService */,
-				79354DCA24C1CA8900BEAF8B /* NetworkService.swift */,
+				794F6E4424C31B6100187DF2 /* NetworkService */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -305,12 +312,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		79354DD224C1D60900BEAF8B /* Extentesion */ = {
+		79354DD224C1D60900BEAF8B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */,
 			);
-			path = Extentesion;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		79354DD724C1DE8F00BEAF8B /* Cell */ = {
@@ -320,6 +327,40 @@
 				79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		794F6E4424C31B6100187DF2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				79354DCA24C1CA8900BEAF8B /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		794F6E4924C467AE00187DF2 /* SettingModule */ = {
+			isa = PBXGroup;
+			children = (
+				794F6E4A24C469C700187DF2 /* View */,
+				794F6E4D24C469DE00187DF2 /* Presenter */,
+			);
+			path = SettingModule;
+			sourceTree = "<group>";
+		};
+		794F6E4A24C469C700187DF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				794F6E4524C467A600187DF2 /* SettingViewController.swift */,
+				794F6E4624C467A600187DF2 /* SettingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		794F6E4D24C469DE00187DF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				794F6E4B24C469D800187DF2 /* SettingPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79354DB324C198E700BEAF8B /* LaunchScreen.storyboard in Resources */,
+				794F6E4824C467A600187DF2 /* SettingViewController.xib in Resources */,
 				79354DD624C1DE8600BEAF8B /* MainJokeViewCell.xib in Resources */,
 				79354DB024C198E700BEAF8B /* Assets.xcassets in Resources */,
 				15A1C42124C1DE3000F6DCF8 /* NewJokeViewController.xib in Resources */,
@@ -467,6 +509,7 @@
 				79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */,
 				79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */,
 				15A1C42424C1E19200F6DCF8 /* NewJokePresenter.swift in Sources */,
+				794F6E4C24C469D800187DF2 /* SettingPresenter.swift in Sources */,
 				15689B0724C1C3A1002C0CAC /* MyJokeTableViewCell.swift in Sources */,
 				79354DC724C1C3AB00BEAF8B /* Router.swift in Sources */,
 				79354DCE24C1CC1C00BEAF8B /* MainModel.swift in Sources */,
@@ -475,6 +518,7 @@
 				15689B0224C1C342002C0CAC /* MyJokesViewController.swift in Sources */,
 				15A1C42024C1DE3000F6DCF8 /* NewJokeViewController.swift in Sources */,
 				15D5CDB224C1C8B500A5B032 /* MyJokesPresenter.swift in Sources */,
+				794F6E4724C467A600187DF2 /* SettingViewController.swift in Sources */,
 				15A1C41A24C1D3C300F6DCF8 /* CoreDataService.swift in Sources */,
 				15A1C42724C1E97100F6DCF8 /* NewJokeExtention.swift in Sources */,
 				15D5CDB424C1CC1600A5B032 /* MyJokesDataSource.swift in Sources */,
@@ -626,6 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6XYWNGKK3;
 				INFOPLIST_FILE = ChNJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6XYWNGKK3;
 				INFOPLIST_FILE = ChNJokes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

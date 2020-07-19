@@ -15,8 +15,9 @@ class RouterTabBar: UITabBarController {
         UINavigationBar.appearance().prefersLargeTitles = true
         let jokeList = generateNavController(vc: ModuleBuilder.createMainModule(), title: "Joke List")
         let myJokesList = generateNavController(vc: ModuleBuilder.createMyJokesScreen(), title: "My Jokes")
+        let settingScreen = generateNavController(vc: ModuleBuilder.createSettingScreen(), title: "Setting")
       
-        viewControllers = [jokeList, myJokesList]
+        viewControllers = [jokeList, myJokesList, settingScreen]
         
     }
 

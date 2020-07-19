@@ -10,9 +10,12 @@ import UIKit
 
 protocol BuilderProtocol {
     static func createMainModule() -> UIViewController
+    static func createMyJokesScreen() -> UIViewController
+    static func createSettingScreen() -> UIViewController
 }
 
 class ModuleBuilder: BuilderProtocol {
+    
     static func createMainModule() -> UIViewController {
         let view = MainViewController()
         let networkService = NetworkService()
@@ -20,10 +23,17 @@ class ModuleBuilder: BuilderProtocol {
         view.presenter = presenter
         return view
     }
-
+    
     static func createMyJokesScreen() -> UIViewController {
         let view = MyJokesViewController()
         let presenter = MyJokesPresenter(view: view)
+        view.presenter = presenter
+        return view
+    }
+    
+    static func createSettingScreen() -> UIViewController {
+        let view = SettingViewController()
+        let presenter = SettingPreseter(view: view)
         view.presenter = presenter
         return view
     }

@@ -14,6 +14,7 @@ protocol MainProtocol: class {
 }
 protocol MainPresenterViewProtocol: class {
     var jokesArray: [Items]? {get set}
+    func getJokes()
     init(view: MainProtocol, networkService: NetworkServiceProtocol)
 }
 

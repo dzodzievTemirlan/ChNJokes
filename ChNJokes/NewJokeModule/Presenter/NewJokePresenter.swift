@@ -19,7 +19,7 @@ class NewJokePresenter {
         self.view = view
     }
 
-    func saveJoke(joke: String)  {
+    func saveJoke(joke: String) {
         CoreDataService.shared.createNewItem(joke: joke)
         newJokePresenterDelegate?.shouldUpdateTable()
     }

@@ -21,7 +21,8 @@ extension MainViewController: UITableViewDataSource {
             else {return UITableViewCell()}
         guard let jokes = presenter.jokesArray?[indexPath.row] else {return cell}
         cell.jokeLabel.text = jokes.joke
-       
+        cell.shareButtonPressed = self
+        
         return cell
     }
 }
@@ -30,4 +31,9 @@ extension MainViewController: UITableViewDelegate {
         return .init(CGFloat(200))
     }
     
+}
+extension MainViewController: MyJokeTableViewCellProtocol {
+    func shareWith(activity: UIActivityViewController) {
+        present(activity, animated: true, completion: nil)
+    }
 }

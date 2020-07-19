@@ -20,8 +20,8 @@ opt_in_rules:
 excluded:
 - Carthage
 - Pods
-- ChNJokes/AppDelegate.swift
-- ChNJokes/SceneDelegate.swift
+- ChNJokes/Delegates/AppDelegate.swift
+- ChNJokes/Delegates/SceneDelegate.swift
 - Source/ExcludedFolder
 - Source/ExcludedFile.swift
 

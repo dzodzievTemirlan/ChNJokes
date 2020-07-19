@@ -26,18 +26,24 @@ class MainViewController: UIViewController {
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            presenter.getJokes()
+        }
+    }
 }
-
-extension MainViewController: MainProtocol {
-    func success() {
-        tableView.reloadData()
-    }
     
-    func failure(_ error: Error) {
-        let alert = UIAlertController(title: "Data doen't come", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true)
-    }
-    
+    extension MainViewController: MainProtocol {
+        func success() {
+            tableView.reloadData()
+        }
+        
+        func failure(_ error: Error) {
+            let alert = UIAlertController(title: "Data doen't come", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            present(alert, animated: true)
+        }
+        
 }

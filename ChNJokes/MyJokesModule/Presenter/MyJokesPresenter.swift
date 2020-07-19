@@ -18,7 +18,7 @@ class MyJokesPresenter: NewJokePresenterProtocol {
 //        getJokesFromCoreData()
     }
 
-    func getJokesFromCoreData(){
+    func getJokesFromCoreData() {
         CoreDataService.shared.fetchItem {[weak self] (items, error) in
             if let error = error {
                 print(error.localizedDescription)
