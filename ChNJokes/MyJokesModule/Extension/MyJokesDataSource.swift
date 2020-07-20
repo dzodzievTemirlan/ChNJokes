@@ -9,12 +9,10 @@
 import UIKit
 
 extension MyJokesViewController: UITableViewDataSource, UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //
         return presenter.items.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyJokesCell",
                                                        for: indexPath) as? MyJokeTableViewCell else { return  UITableViewCell() }

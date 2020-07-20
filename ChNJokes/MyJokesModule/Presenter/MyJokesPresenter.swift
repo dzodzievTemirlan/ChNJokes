@@ -12,7 +12,6 @@ class MyJokesPresenter: NewJokePresenterProtocol {
 
     let view: MyJokesViewController
     var items:[Item] = []
-    
     required init(view:MyJokesViewController) {
         self.view = view
 //        getJokesFromCoreData()
@@ -28,7 +27,6 @@ class MyJokesPresenter: NewJokePresenterProtocol {
                 DispatchQueue.main.async {
                     self?.view.tableView.reloadData()
                 }
-                
             }
         }
     }

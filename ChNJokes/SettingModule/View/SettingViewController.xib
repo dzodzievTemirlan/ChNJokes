@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="firstnameTextField" destination="LGh-8S-cw8" id="WVk-Ov-Hub"/>
                 <outlet property="lastnameTextField" destination="wJJ-oZ-Z2b" id="KYV-lu-42J"/>
+                <outlet property="saveButton" destination="1dq-ly-2A0" id="nQd-XI-mYi"/>
                 <outlet property="subView" destination="ccS-mI-V0j" id="lMO-Gf-Jcg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -51,6 +52,21 @@
                                 <action selector="switchMode:" destination="-1" eventType="valueChanged" id="FZ4-XK-HwF"/>
                             </connections>
                         </switch>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dq-ly-2A0">
+                            <rect key="frame" x="294" y="204" width="100" height="50"/>
+                            <color key="backgroundColor" red="0.2050347626" green="0.78381699319999998" blue="0.34893149140000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="V8e-uA-XkX"/>
+                                <constraint firstAttribute="height" constant="50" id="Wa4-7w-CkL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="hQx-Xp-EHY"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -62,7 +78,9 @@
                         <constraint firstItem="lzp-oh-Cx9" firstAttribute="top" secondItem="wJJ-oZ-Z2b" secondAttribute="bottom" constant="20" id="afk-54-ALf"/>
                         <constraint firstItem="wJJ-oZ-Z2b" firstAttribute="leading" secondItem="ccS-mI-V0j" secondAttribute="leadingMargin" constant="20" id="gke-1d-riD"/>
                         <constraint firstItem="lzp-oh-Cx9" firstAttribute="leading" secondItem="ccS-mI-V0j" secondAttribute="leading" constant="28" id="mnT-3y-hxM"/>
+                        <constraint firstAttribute="trailing" secondItem="1dq-ly-2A0" secondAttribute="trailing" constant="20" id="mwO-5s-ykl"/>
                         <constraint firstItem="LGh-8S-cw8" firstAttribute="top" secondItem="ccS-mI-V0j" secondAttribute="top" constant="20" id="nKu-zs-ZSe"/>
+                        <constraint firstItem="1dq-ly-2A0" firstAttribute="top" secondItem="lzp-oh-Cx9" secondAttribute="bottom" constant="30" id="niz-aZ-fBd"/>
                         <constraint firstItem="LGh-8S-cw8" firstAttribute="leading" secondItem="ccS-mI-V0j" secondAttribute="leadingMargin" constant="20" id="uHH-zx-92y"/>
                     </constraints>
                 </view>

@@ -13,7 +13,6 @@ protocol MyJokeTableViewCellProtocol: class {
 }
 
 class MyJokeTableViewCell: UITableViewCell {
-    
     var item: Item?
     weak var myJokeTableViewCellDelegate: MyJokeTableViewCellProtocol?
     @IBOutlet weak var jokeLabel: UILabel!

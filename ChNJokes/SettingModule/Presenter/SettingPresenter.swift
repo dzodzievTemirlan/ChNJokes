@@ -9,7 +9,6 @@
 import Foundation
 
 protocol SettingPresenterProtocol: class {
-    
 }
 
 protocol SettingPresenterViewProtocol: class {

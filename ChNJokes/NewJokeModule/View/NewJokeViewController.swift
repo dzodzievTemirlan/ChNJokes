@@ -9,9 +9,7 @@
 import UIKit
 
 class NewJokeViewController: UIViewController {
-    
     var presenter:NewJokePresenter!
-
     @IBOutlet weak var subView: UIView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var counterLabel: UILabel!
@@ -28,17 +26,15 @@ class NewJokeViewController: UIViewController {
             }
         }
     }
-
     var shapeLayer: CAShapeLayer! {
         didSet {
-        shapeLayer.lineWidth = 3
+            shapeLayer.lineWidth = 3
             shapeLayer.lineCap = .square
-        shapeLayer.fillColor = nil
-        shapeLayer.strokeEnd = 1
-        shapeLayer.strokeColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1).cgColor
+            shapeLayer.fillColor = nil
+            shapeLayer.strokeEnd = 1
+            shapeLayer.strokeColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1).cgColor
         }
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         shapeLayer = CAShapeLayer()
@@ -48,7 +44,6 @@ class NewJokeViewController: UIViewController {
         counterLabel.text = "\(counterInt)/ 140"
         saveOutlet.isEnabled = false
     }
-
     override func viewDidLayoutSubviews() {
         shapeLayer.frame = textView.bounds
         let path = UIBezierPath()
@@ -56,13 +51,11 @@ class NewJokeViewController: UIViewController {
         path.addLine(to: CGPoint(x: textView.frame.maxX, y: textView.frame.maxY)) // конечная точка отрисовки
         shapeLayer.path = path.cgPath //добавляем путь отрисоки
     }
-
     @IBAction func saveAction(_ sender: UIButton) {
         guard let text = textView.text else { return }
         presenter.saveJoke(joke: text)
         navigationController?.popViewController(animated: true)
     }
-
     @IBAction func cancelAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

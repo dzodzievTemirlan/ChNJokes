@@ -15,3 +15,7 @@ struct Items: Codable {
     let id : Int
     let joke: String
 }
+struct PersonModel: Codable {
+    let firstName: String
+    let lastName: String
+}

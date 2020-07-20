@@ -32,7 +32,7 @@
 		79354DC724C1C3AB00BEAF8B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DC624C1C3AB00BEAF8B /* Router.swift */; };
 		79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DCA24C1CA8900BEAF8B /* NetworkService.swift */; };
 		79354DCE24C1CC1C00BEAF8B /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DCD24C1CC1C00BEAF8B /* MainModel.swift */; };
-		79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */; };
+		79354DD124C1D60300BEAF8B /* ExtMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD024C1D60300BEAF8B /* ExtMainViewController.swift */; };
 		79354DD524C1DE8600BEAF8B /* MainJokeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */; };
 		79354DD624C1DE8600BEAF8B /* MainJokeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */; };
 		794F6E4724C467A600187DF2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F6E4524C467A600187DF2 /* SettingViewController.swift */; };
@@ -68,7 +68,7 @@
 		79354DC624C1C3AB00BEAF8B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		79354DCA24C1CA8900BEAF8B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		79354DCD24C1CC1C00BEAF8B /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtMainViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		79354DD024C1D60300BEAF8B /* ExtMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtMainViewController.swift; sourceTree = "<group>"; };
 		79354DD324C1DE8600BEAF8B /* MainJokeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJokeViewCell.swift; sourceTree = "<group>"; };
 		79354DD424C1DE8600BEAF8B /* MainJokeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainJokeViewCell.xib; sourceTree = "<group>"; };
 		794F6E4524C467A600187DF2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -239,8 +239,8 @@
 				79354DBE24C19D2700BEAF8B /* MainModule */,
 				15689AFF24C1C005002C0CAC /* MyJokesModule */,
 				15A1C41C24C1DE0000F6DCF8 /* NewJokeModule */,
-				79354DCC24C1CA8F00BEAF8B /* ServiceLayer */,
 				794F6E4924C467AE00187DF2 /* SettingModule */,
+				79354DCC24C1CA8F00BEAF8B /* ServiceLayer */,
 				79354DAF24C198E700BEAF8B /* Assets.xcassets */,
 				79354DA924C198E500BEAF8B /* Main.storyboard */,
 				79354DB124C198E700BEAF8B /* LaunchScreen.storyboard */,
@@ -315,7 +315,7 @@
 		79354DD224C1D60900BEAF8B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				79354DD024C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift */,
+				79354DD024C1D60300BEAF8B /* ExtMainViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				79354DA824C198E500BEAF8B /* MainViewController.swift in Sources */,
 				79354DBD24C19D1900BEAF8B /* MainPresenter.swift in Sources */,
 				79354DD524C1DE8600BEAF8B /* MainJokeViewCell.swift in Sources */,
-				79354DD124C1D60300BEAF8B /* ExtMainViewController+UITableViewDataSource.swift in Sources */,
+				79354DD124C1D60300BEAF8B /* ExtMainViewController.swift in Sources */,
 				79354DCB24C1CA8900BEAF8B /* NetworkService.swift in Sources */,
 				79354DA424C198E500BEAF8B /* AppDelegate.swift in Sources */,
 				15A1C42424C1E19200F6DCF8 /* NewJokePresenter.swift in Sources */,

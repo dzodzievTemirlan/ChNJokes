@@ -27,7 +27,6 @@ class MainPresenter:MainPresenterViewProtocol {
         self.networkService = networkService
         getJokes()
     }
-    
     func getJokes() {
         networkService?.getData(complition: { [weak self] (result) in
             guard let self = self else {return}
@@ -42,5 +41,4 @@ class MainPresenter:MainPresenterViewProtocol {
             }
         })
     }
-    
 }
